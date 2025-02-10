@@ -1,0 +1,16 @@
+for (let u = 0; u <= faceResolution; u++) {
+    const tU = u / faceResolution;
+    const p1 = ...; // Interpolate vertices along U
+    const p2 = ...;
+
+    for (let v = 0; v <= faceResolution; v++) {
+        const tV = v / faceResolution;
+        const pixelX = ...; // Interpolate between p1 and p2
+        const pixelY = ...;
+
+        // ... (Shading calculation - same as before) ...
+
+        ctx.fillStyle = pointColor;
+        ctx.fillRect(pixelX, pixelY, 1, 1); // Draw pixel
+    }
+}
